@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 // Proxy endpoint
 app.post("/scan", async (req, res) => {
   try {
-    const response = await fetch("https://https://n8n-scanner-jd5c.onrender.com/webhook/scan-url", {
+    const response = await fetch("https://n8n-scanner-jd5c.onrender.com/webhook/scan-url", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(req.body)
